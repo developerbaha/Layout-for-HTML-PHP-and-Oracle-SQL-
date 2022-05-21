@@ -4,8 +4,8 @@
 <title>Page Title</title>
 <link rel="stylesheet" href="./style.css">
 
-<a href="https://www.teach.scam.keele.ac.uk/prin/x4z33/Product%20Name%20&%20Sale%20Information.php">Product Name & Sale Information</a>
-<a href="https://www.teach.scam.keele.ac.uk/prin/x4z33/Employee%20&%20Department%20Information.php">Employee & Department Information</a>
+<a href="https://www.Sale%20Information.php">Product Name & Sale Information</a>
+<a href="https://www.Department%20Information.php">Employee & Department Information</a>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
  <?php
 //Program to read the contents of ITEM and display them in a table
 if(isset($_POST['tables']))
-if ($Connection = oci_connect("x4z33", "tpdcr2aD"))
+if ($Connection = oci_connect("user-name", "password"))
 {
 
 $sql = "select * from ".$_POST['tables']." ";
