@@ -4,7 +4,7 @@
 <title>Page Title</title>
 <link rel="stylesheet" href="./style.css">
 
-<<p><a href="https://www.teach.scam.keele.ac.uk/prin/x4z33/Homepage.php">Homepage</a></p>
+<<p><a href="https://www.Homepage.php">Homepage</a></p>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 if(isset($_POST['SALE'])){
     $SALE = $_POST['SALE'];
 
-if ($Connection = oci_connect("x4z33", "tpdcr2aD")) 
+if ($Connection = oci_connect("user-name", "password")) 
 {
   $sql = "SELECT SALE.CUSTOMER_ID, SALE.EMPLOYEE_ID, SALE.ADDRESS1_ID, SALE.STORE_ID, SALE.DEPARTMENT_ID, PRODUCT.ID, PRODUCT.NAME FROM SALE INNER JOIN PRODUCT ON SALE.ID = PRODUCT.ID where PRODUCT.ID = '".$_POST['SALE']."'";
 
